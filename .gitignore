@@ -47,9 +47,14 @@ web_modules/
 
 # TypeScript cache
 *.tsbuildinfo
+next-env.d.ts
 
 # Optional npm cache directory
 .npm
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Optional eslint cache
 .eslintcache
@@ -90,6 +95,7 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+.build
 
 # Gatsby files
 .cache/
@@ -128,3 +134,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+.DS_Store
+
+# vercel
+.vercel
