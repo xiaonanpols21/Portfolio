@@ -1,0 +1,29 @@
+@import "../../../styles/variables.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: $white;
+
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='black' stroke-width='3' stroke-dasharray='20%2c 15' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+    // Bron: https://kovart.github.io/dashed-border-generator/#:~:text=Native%20CSS%20properties%20don't,even%20change%20a%20line%20cap.
+
+    border-radius: 20px;
+    box-shadow: 0px 8px 0px 0px rgba($black, 0.15);
+
+    > img {
+        width: auto;
+        height: 30px;
+    }
+
+    button {
+        padding: 10px;
+        background: transparent;
+        background-color: rgba($purple, 0.5);
+        border: 1px solid $black;
+        border-radius: 5px;
+        box-shadow: 2px 2px 0px 0px $black;
+    }
+}
