@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Divider from "../divider";
 
 import styles from "./header.module.scss";
 
@@ -41,7 +42,19 @@ export default function Header() {
                     <li><Link href="">Ervaringen</Link></li>
                     <li><Link href="">Contact</Link></li>
                 </ul>
+
+                <Divider/>
+
+                <ul>
+                    <li><Link href="">Over mij</Link></li>
+                </ul>
             </section>
+
+           
+
+
+
+
         </>
     )
 }

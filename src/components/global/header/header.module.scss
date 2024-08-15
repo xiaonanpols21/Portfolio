@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 16px 20px;
     background-color: $white;
 
@@ -35,6 +36,7 @@
     ul {
         display: flex;
         gap: 50px;
+
         list-style: none;
         font-weight: bold;
         
@@ -47,8 +49,23 @@
 }
 
 .openMenu {
-    ul {
+    background-color: $white;
+
+    > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        @include f24;
         font-weight: bold;
+        list-style: none;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: $black;
+        }
+
     }
 }
 
@@ -59,6 +76,7 @@
         padding: 16px 70px;
 
         > img {
+            width: 120px;
             height: 35px;
         }
 
