@@ -27,3 +27,47 @@
         box-shadow: 2px 2px 0px 0px $black;
     }
 }
+
+.nav {
+    @include f18;
+    display: none;
+
+    ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        font-weight: bold;
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+.openMenu {
+    ul {
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 992px) { 
+    .header {
+        max-width: 1300px;
+        margin: auto;
+        padding: 16px 70px;
+
+        > img {
+            height: 35px;
+        }
+
+        button {
+            display: none;
+        }
+    }
+
+    .nav {
+        display: block;
+    }
+}

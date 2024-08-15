@@ -7,3 +7,8 @@ $yellow: #F8C631;
 $blue: #1DA0F2;
 $white: #FFFFFF;
 
+// Font
+@mixin f18 {
+    font-size: 18px;
+    line-height: 30px;
+}
