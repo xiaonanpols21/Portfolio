@@ -2,39 +2,53 @@
 
 .ul {
     @include flex(row, 1.25rem);
+    justify-content: center;
 
     li {
         list-style: none;
     }
 
     a {
-        @include flex(row, 0px);
         @include f16;
         text-decoration: none;
         color: $black;
 
-        &:hover span {
+        &:hover figcaption {
             display: inline;
         }
+    }
 
-        img {
-            padding: 1rem;
+    img {
+        position: relative;
+        padding: 1rem;
+        width: 60px;
+        height: 60px; 
+        background-color: $pink;
+        background: radial-gradient($pink 65%, $black 66%, transparent 70%);
+    }
+
+    figure {
+        @include flex(row, 20px);
+        align-items: center;
+        position: relative;
+       
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 3px;
+            top: 3px;
             width: 60px;
-            height: 60px;
-            background-color: $pink;
-            border-radius: 50px;
-            border: 1px solid $black;
-            box-shadow: 3px 3px 0px 0px $black;
+            height: 60px; 
+            background: radial-gradient($black 65%, transparent 66%);
         }
 
-        span {
+        figcaption {
             display: none;
             padding: 1rem 1.875rem 1rem 3.125rem; // 30px
             margin-left: -30px;
             background-color: rgba($pink, 0.1);
             border-radius: 0px 50px 50px 0px;
-
         }
-
     }
 }
