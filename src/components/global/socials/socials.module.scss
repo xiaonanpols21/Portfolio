@@ -1,7 +1,7 @@
 @import "../../../styles/variables.scss";
 
 .ul {
-    @include flex(row, 1.25rem);
+    @include flex(row, 3.125rem);
     justify-content: center;
 
     li {
@@ -21,14 +21,14 @@
     img {
         position: relative;
         padding: 1rem;
-        width: 60px;
-        height: 60px; 
+        width: 3.75rem; // 60px
+        height: 3.75rem; // 60px
         background-color: $pink;
         background: radial-gradient($pink 65%, $black 66%, transparent 70%);
     }
 
     figure {
-        @include flex(row, 20px);
+        @include flex(row, 1.25rem);
         align-items: center;
         position: relative;
        
@@ -38,15 +38,15 @@
             position: absolute;
             left: 3px;
             top: 3px;
-            width: 60px;
-            height: 60px; 
+            width: 3.75rem; // 60px
+            height: 3.75rem; // 60px
             background: radial-gradient($black 65%, transparent 66%);
         }
 
         figcaption {
             display: none;
-            padding: 1rem 1.875rem 1rem 3.125rem; // 30px
-            margin-left: -30px;
+            padding: 1rem 1.875rem 1rem 1.875rem; // 30px
+            margin-left: -1.875rem;
             background-color: rgba($pink, 0.1);
             border-radius: 0px 50px 50px 0px;
         }
