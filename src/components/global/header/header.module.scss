@@ -18,6 +18,7 @@
 
     border-radius: 20px;
     box-shadow: 0px 8px 0px 0px rgba($black, 0.15);
+    z-index: 1;
 
     > img {
         width: auto;
@@ -51,12 +52,20 @@
 }
 
 .openMenu {
+    @include flex(column, 0px);
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: $white;
     padding: 1.25rem;
 
     > ul:first-of-type {
         @include flex(column, 3.125rem);
         @include f24;
+        margin-top: 3.125rem; // 50px
         font-weight: bold;
         list-style: none;
         text-align: center;
@@ -65,7 +74,11 @@
             text-decoration: none;
             color: $black;
         }
+    }
 
+    p:last-of-type {
+        @include f14;
+        text-align: center;
     }
 }
 

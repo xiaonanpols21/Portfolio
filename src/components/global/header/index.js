@@ -35,6 +35,7 @@ export default function Header() {
                 <Navigation/>
                 <Divider/>
                 <Socials/>
+                <p>© 2024 XIAO</p>
             </section>
 
            

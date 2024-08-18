@@ -1,7 +1,7 @@
 @import "../../../styles/variables.scss";
 
 .ul {
-    @include flex(row, 3.125rem);
+    @include flex(row, 1.875rem); // 30px
     justify-content: center;
 
     li {
