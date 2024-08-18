@@ -1,11 +1,16 @@
 @import "../../../styles/variables.scss";
 
 .header {
+    position: fixed;
+    top: 1.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 16px 20px;
+    padding: 1rem 1.25rem;
     background-color: $white;
 
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='black' stroke-width='3' stroke-dasharray='20%2c 15' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
@@ -20,7 +25,7 @@
     }
 
     button {
-        padding: 10px;
+        padding: 0.625rem; // 10px
         background: transparent;
         background-color: rgba($purple, 0.5);
         border: 1px solid $black;
@@ -34,12 +39,9 @@
     display: none;
 
     ul {
-        display: flex;
-        gap: 50px;
-
+        @include flex(row, 3.125rem);
         list-style: none;
         font-weight: bold;
-        
     }
 
     a {
@@ -50,12 +52,10 @@
 
 .openMenu {
     background-color: $white;
+    padding: 1.25rem;
 
-    > ul {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-
+    > ul:first-of-type {
+        @include flex(column, 3.125rem);
         @include f24;
         font-weight: bold;
         list-style: none;
@@ -73,7 +73,7 @@
     .header {
         max-width: 1300px;
         margin: auto;
-        padding: 16px 70px;
+        padding: 1rem 4.375rem; // 70px
 
         > img {
             width: 120px;

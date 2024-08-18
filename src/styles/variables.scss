@@ -8,12 +8,24 @@ $blue: #1DA0F2;
 $white: #FFFFFF;
 
 // Font
+@mixin f16 {
+    font-size: 1rem; // 16px
+    line-height: 1.75rem; // 28px
+}
+
 @mixin f18 {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125rem; // 18px
+    line-height: 1.875rem; // 30px
 }
 
 @mixin f24 {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 1.5rem; // 24px
+    line-height: 2.5rem; // 40px
+}
+
+// Fex
+@mixin flex($direction, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
 }

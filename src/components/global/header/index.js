@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import Divider from "../divider";
+import Navigation from "../navigation";
+import Socials from "../socials";
 
 import styles from "./header.module.scss";
 
@@ -25,29 +26,15 @@ export default function Header() {
                 </button>
 
                 <nav className={styles.nav}>
-                    <ul>
-                        <li><Link href="">Over mij</Link></li>
-                        <li><Link href="">Mijn projecten</Link></li>
-                        <li><Link href="">Ervaringen</Link></li>
-                        <li><Link href="">Contact</Link></li>
-                    </ul>
+                    <Navigation/>
                 </nav>
             </header>
 
             <section className={styles.openMenu}>
                 <h2 className="visually-hidden">Open menu</h2>
-                <ul>
-                    <li><Link href="">Over mij</Link></li>
-                    <li><Link href="">Mijn projecten</Link></li>
-                    <li><Link href="">Ervaringen</Link></li>
-                    <li><Link href="">Contact</Link></li>
-                </ul>
-
+                <Navigation/>
                 <Divider/>
-
-                <ul>
-                    <li><Link href="">Over mij</Link></li>
-                </ul>
+                <Socials/>
             </section>
 
            
