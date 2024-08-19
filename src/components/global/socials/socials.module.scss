@@ -14,7 +14,9 @@
         color: $black;
 
         &:hover figcaption {
-            display: inline;
+            position: relative;
+            transform: translateX(-20%);
+            opacity: 100%;
         }
     }
 
@@ -44,11 +46,14 @@
         }
 
         figcaption {
-            display: none;
-            padding: 1rem 1.875rem 1rem 1.875rem; // 30px
-            margin-left: -1.875rem;
+            position: absolute;
+            padding: 1rem 1.875rem 1rem 3.125rem;
+            width: max-content;
             background-color: rgba($pink, 0.1);
             border-radius: 0px 50px 50px 0px;
+            transform: translateX(-30%);
+            opacity: 0;
+            transition: .4s ease-out;
         }
     }
 }
