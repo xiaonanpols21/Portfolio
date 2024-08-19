@@ -7,7 +7,7 @@ export default function Socials() {
     return (
         <ul className={styles.ul}>
             <li>
-                <Link href="https://github.com/xiaonanpols21">
+                <Link href="https://github.com/xiaonanpols21" target="_blank">
                     <figure>
                         <Image
                             src="/img/icons/github.svg"
@@ -20,7 +20,7 @@ export default function Socials() {
                 </Link>
             </li>
             <li>
-                <Link href="https://www.linkedin.com/in/xiao-nan-pols-b839951b5/">
+                <Link href="https://www.linkedin.com/in/xiao-nan-pols-b839951b5/" target="_blank">
                     <figure>
                         <Image
                             src="/img/icons/linkedin.svg"
@@ -33,7 +33,7 @@ export default function Socials() {
                 </Link>
             </li>
             <li>
-                <Link href="https://www.instagram.com/xiaonanpols21/">
+                <Link href="https://www.instagram.com/xiaonanpols21/" target="_blank">
                     <figure>
                         <Image
                             src="/img/icons/insta.svg"

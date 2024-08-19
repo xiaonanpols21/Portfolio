@@ -37,12 +37,6 @@ export default function Header() {
                 <Socials/>
                 <p>© 2024 XIAO</p>
             </section>
-
-           
-
-
-
-
         </>
     )
 }
