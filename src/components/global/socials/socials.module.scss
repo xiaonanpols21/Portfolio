@@ -13,12 +13,12 @@
         text-decoration: none;
         color: $black;
 
-        &:hover figcaption {
-            position: relative;
-            transform: translateX(-20%);
-            opacity: 100%;
-            padding: 1rem 1.875rem 1rem 3.125rem;
-        }
+        // &:hover figcaption {
+        //     position: relative;
+        //     transform: translateX(-20%);
+        //     opacity: 100%;
+        //     padding: 1rem 1.875rem 1rem 3.125rem;
+        // }
 
         &:active img {
             background: radial-gradient($purple 65%, $black 66%, transparent 70%);
