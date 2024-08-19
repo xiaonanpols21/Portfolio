@@ -7,8 +7,9 @@ import styles from "./header.module.scss";
 
 export default function Header() {
     return (
-        <>
-            <header className={styles.header}>
+        <section className={styles.section}>
+            <h2 className="visually-hidden">Header</h2>
+            <header>
                 <Image
                     src="/img/logo.svg"
                     width={120}
@@ -16,23 +17,14 @@ export default function Header() {
                     alt="Xiao Logo"
                 />
 
-                <button>
-                    <Image
-                        src="/img/icons/menu.svg"
-                        width={15}
-                        height={12}
-                        alt="Menu"
-                    />
-                </button>
-
-                <label>
+                <label aria-label="Menu knop">
                     <input type="checkbox"/>
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
 
-                <nav className={styles.nav}>
+                <nav>
                     <Navigation/>
                 </nav>
             </header>
@@ -44,6 +36,6 @@ export default function Header() {
                 <Socials/>
                 <p>© 2024 XIAO</p>
             </section>
-        </>
+        </section>
     )
 }
