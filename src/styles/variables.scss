@@ -7,6 +7,9 @@ $yellow: #F8C631;
 $blue: #1DA0F2;
 $white: #FFFFFF;
 
+// Variables
+$box-shadow: 2px 2px 0px 0px $black;
+
 // Font
 @mixin f14 {
     font-size: 0.875rem; // 14px
