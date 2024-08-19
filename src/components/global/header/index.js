@@ -25,6 +25,13 @@ export default function Header() {
                     />
                 </button>
 
+                <label>
+                    <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
                 <nav className={styles.nav}>
                     <Navigation/>
                 </nav>

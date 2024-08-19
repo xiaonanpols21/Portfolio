@@ -34,3 +34,9 @@ $white: #FFFFFF;
     flex-direction: $direction;
     gap: $gap;
 }
+
+@mixin justify($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
