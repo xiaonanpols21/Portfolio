@@ -8,21 +8,20 @@ import styles from "./scrollGallery.module.scss";
 export default function ScrollGallery() {
     const ulRef = useRef(null);
 
-  useEffect(() => {
-    if (ulRef.current) {
-      // Scroll the list to the position of the second <li> element
-      const liElement = ulRef.current.querySelector('li');
-      const gap = parseInt(window.getComputedStyle(ulRef.current).gap);
-      ulRef.current.scrollLeft = liElement.clientWidth + gap;
-    }
-  }, []);
+    useEffect(() => {
+        if (ulRef.current) {
+            const liElement = ulRef.current.querySelector('li');
+            const gap = parseInt(window.getComputedStyle(ulRef.current).gap);
+            ulRef.current.scrollLeft = liElement.clientWidth + gap;
+        }
+    }, []);
 
     return (
         <section className={styles.section}>
             <ul ref={ulRef}>
                 <li>
                     <Image
-                        src="/img/xiao.jpg"
+                        src="/img/h-1.jpg"
                         width={300}
                         height={260}
                         alt="Xiao Nan Pols"
@@ -30,7 +29,7 @@ export default function ScrollGallery() {
                 </li>
                 <li>
                     <Image
-                        src="/img/xiao.jpg"
+                        src="/img/h-1.jpg"
                         width={300}
                         height={260}
                         alt="Xiao Nan Pols"
@@ -39,7 +38,7 @@ export default function ScrollGallery() {
                 </li>
                 <li>
                     <Image
-                        src="/img/xiao.jpg"
+                        src="/img/h-1.jpg"
                         width={300}
                         height={260}
                         alt="Xiao Nan Pols"
