@@ -1,3 +1,4 @@
+import DarkMode from "../darkMode";
 import ScrollGallery from "../global/scollGallery";
 
 import styles from "./hero.module.scss";
@@ -5,11 +6,7 @@ import styles from "./hero.module.scss";
 export default function Hero() {
     return (
         <section className={styles.section}>
-            <label>
-                <input type="checkbox"/>
-                <span></span>
-            </label>
-
+            <DarkMode/>
             <ScrollGallery/>
         </section>
     )

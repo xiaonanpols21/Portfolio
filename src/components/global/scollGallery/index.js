@@ -21,6 +21,7 @@ export default function ScrollGallery() {
                         height={260}
                         alt="Xiao Nan Pols"
                     />
+                    <div className={styles.verified}></div>
                 </li>
                 <li>
                     <Image
