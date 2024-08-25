@@ -4,8 +4,8 @@
 
     ul {
         display: flex;
-        gap: 20px;
-        overflow-x: scroll;
+        gap: 10px;
+        overflow-x: auto;
         margin: 0px -20px;
         padding: 0px 20px 5px 20px;
         scroll-snap-type: x mandatory;
@@ -44,11 +44,11 @@
 }
 
 @keyframes animate-in-x {
-	0% { opacity: 0; transform: translateX(0%) scale(0); }
+	0% { opacity: 0.5; transform: translateX(1%) scale(0.9); }
 	100% { opacity: 1; transform: translateX(0) scale(1); }
 }
 
 @keyframes animate-out-x {
 	0% { opacity: 1; transform: translateX(0) scale(1); }
-	100% { opacity: 0; transform: translateX(0%) scale(0); }
+	100% { opacity: 0.5; transform: translateX(-1%) scale(0.9); }
 }
