@@ -1,11 +1,25 @@
+"use client";
+import { useEffect, useRef } from 'react';
+
 import Image from "next/image";
 
 import styles from "./scrollGallery.module.scss";
 
 export default function ScrollGallery() {
+    const ulRef = useRef(null);
+
+  useEffect(() => {
+    if (ulRef.current) {
+      // Scroll the list to the position of the second <li> element
+      const liElement = ulRef.current.querySelector('li');
+      const gap = parseInt(window.getComputedStyle(ulRef.current).gap);
+      ulRef.current.scrollLeft = liElement.clientWidth + gap;
+    }
+  }, []);
+
     return (
         <section className={styles.section}>
-            <ul>
+            <ul ref={ulRef}>
                 <li>
                     <Image
                         src="/img/xiao.jpg"
