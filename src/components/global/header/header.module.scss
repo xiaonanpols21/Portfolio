@@ -122,13 +122,13 @@
 @media (min-width: 992px) { 
     .section {
         header {
-            max-width: 1300px;
+            max-width: 81.25rem; // 1300px
             margin: auto;
             padding: 1rem 4.375rem; // 70px
     
             > img {
-                width: 120px;
-                height: 35px;
+                width: 7.5rem; // 120px
+                height: 2.188rem; // 35px
             }
     
             label {

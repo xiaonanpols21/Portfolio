@@ -1,91 +1,45 @@
 @import "../../styles/variables.scss";
 
 .section {
+    @include flex(column, 30px);
     margin-top: 4.188rem + 1.875rem; // 67px 30px
     padding: 1.25rem;
 
-    ul {
-        display: flex;
-        gap: 0px;
-        overflow-x: auto;
-        margin: 0px -1.25rem;
-        padding: 0px 1.25rem 60px 1.25rem;
-        scroll-snap-type: x mandatory;
-
-        /* Hide scrollbar for Chrome, Safari and Opera */
-        &::-webkit-scrollbar {
-            display: none;
-        }
-        
-        /* Hide scrollbar for IE, Edge and Firefox */
-        & {
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
-        }
-        // Bron: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
-        
-        img {
-            width: 15.625rem; // 250px
-            height: 100%;
-            object-fit: cover;
-            border-radius: 1.25rem;
-        }
-    
-        li {
-            position: relative;
-            display: block;
-            list-style: none;
-            padding: 1.25rem;
-            height: 18.75rem; // 300px
-            border: 1px solid $black;
-            border-radius: 1.25rem;
-            box-shadow: $box-shadow-5;
-            background-color: $white;
-            scroll-snap-align: center;
-
-            animation: animate-in-x linear forwards,
-                animate-out-x linear forwards;
-                animation-timeline: view(x);
-                animation-range: entry, exit;
-
-            &:nth-child(3n) {
-                animation: animate-in-x linear forwards,
-                animate-out-x linear forwards;
-                animation-timeline: view(x);
-                animation-range: entry, exit;
-            }
-        }
+    h1 {
+        @include f58;
+        line-height: 3.125rem; // 50px
+        text-transform: uppercase;
     }
 }
 
-.verified {
-    position: absolute;
-    right: 1.25rem;
-    bottom: -1.25rem;
-    width: 3.75rem; // 60px
-    aspect-ratio: 1/1;
-    background-color: $blue;
-    border-radius: 3.125rem; // 50px
-    box-shadow: $box-shadow-5;
-   
-    &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 26px;
-        height: 25px;
-        background-image: url("../../../public/img/icons/verified.svg");
+.headerContent {
+    @include flex(column, 1.25rem);
+
+    p {
+        &:first-of-type {
+            @include f14;
+            font-style: italic;
+            margin: -0.625rem 0px 0.625rem 0px;
+        }
+
+        &:last-of-type {
+            @include f18;
+        }
+    }
+
+    button {
+        @include btn1;
+        margin-top: 1.875rem; // 30px
     }
 }
 
-@keyframes animate-in-x {
-    0% { opacity: 0.5; transform: translateX(1%) scale(0.8); }
-    100% { opacity: 1; transform: translateX(0) scale(1); }
-}
+@media (min-width: 576px) { 
+    .headerContent {
+        max-width: 550px;
+        margin: auto;
 
-@keyframes animate-out-x {
-    0% { opacity: 1; transform: translateX(0) scale(1); }
-    100% { opacity: 0.5; transform: translateX(-1%) scale(0.8); }
+       button {
+        width: fit-content;
+       }
+    }
 }

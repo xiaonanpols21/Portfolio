@@ -12,6 +12,7 @@ $box-shadow: 2px 2px 0px 0px $black;
 $box-shadow-5: 5px 5px 0px 0px $black;
 
 // Font
+$font-stack: "Poppins", sans-serif;
 @mixin f14 {
     font-size: 0.875rem; // 14px
     line-height: 1.438rem; // 23px
@@ -32,6 +33,11 @@ $box-shadow-5: 5px 5px 0px 0px $black;
     line-height: 2.5rem; // 40px
 }
 
+@mixin f58 {
+    font-size: 3.625rem; // 58 px
+    line-height: 4.313rem; // 69px
+}
+
 // Fex
 @mixin flex($direction, $gap) {
     display: flex;
@@ -43,4 +49,16 @@ $box-shadow-5: 5px 5px 0px 0px $black;
     display: flex;
     justify-content: $justify;
     align-items: $align;
+}
+
+@mixin btn1 {
+    @include f18;
+    font-family: $font-stack;
+    font-weight: bold;
+    color: $white;
+    padding: 1.25rem 1.875rem;
+    background-color: $purple;
+    border: 1px solid $white;
+    border-radius: 0.625rem; // 10px
+    box-shadow: $box-shadow-5;
 }

@@ -18,8 +18,8 @@ export default function ScrollGallery({ data }) {
     return (
         <section className={styles.section}>
             <ul ref={ulRef}>
-                {data.map(item => (
-                    <li key={item}>
+                {data.map((item, key) => (
+                    <li key={key}>
                         <Image
                             src={item.url}
                             width={300}

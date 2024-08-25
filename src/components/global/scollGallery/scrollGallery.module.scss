@@ -6,7 +6,7 @@
         gap: 0px;
         overflow-x: auto;
         margin: 0px -1.25rem;
-        padding: 0px 1.25rem 60px 1.25rem;
+        padding: 0px 1.25rem 1.875rem 1.25rem; // 30px
         scroll-snap-type: x mandatory;
 
         /* Hide scrollbar for Chrome, Safari and Opera */
@@ -85,4 +85,36 @@
 @keyframes animate-out-x {
 	0% { opacity: 1; transform: translateX(0) scale(1); }
 	100% { opacity: 0.5; transform: translateX(-1%) scale(0.8); }
+}
+
+@media (min-width: 576px) { 
+    .section {
+        ul {
+            gap: 1.25rem;
+
+            img {
+                width: 300px;
+            }
+
+            li {
+                height: 350px;
+            }
+        }
+    }
+
+    @keyframes animate-in-x {
+        0% { opacity: 0.5; transform: translateX(10%) scale(0.5); }
+        100% { opacity: 1; transform: translateX(0) scale(1); }
+    }
+    
+    @keyframes animate-out-x {
+        0% { opacity: 1; transform: translateX(0) scale(1); }
+        100% { opacity: 0.5; transform: translateX(-10%) scale(0.5); }
+    }
+}
+
+@media (min-width: 992px) { 
+    .section {
+        display: none;
+    }
 }

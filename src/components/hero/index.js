@@ -1,6 +1,7 @@
 import data from "../../../public/data/data.json";
 import DarkMode from "../darkMode";
 import ScrollGallery from "../global/scollGallery";
+import HeroGallery from "../heroGallery";
 
 import styles from "./hero.module.scss";
 
@@ -11,6 +12,14 @@ export default function Hero() {
         <section className={styles.section}>
             <DarkMode/>
             <ScrollGallery data={imgData} />
+            <HeroGallery/>
+
+            <div className={styles.headerContent}>
+                <h1>Creative developer</h1>
+                <p>lorem ipsum dolor sit</p>
+                <p>Lorem ipsum dolor sit amet consectetur. Orci velit id id volutpat. Feugiat pharetra non mi pharetra quis.</p>
+                <button>Mijn projecten</button>
+            </div>
         </section>
     )
 }
