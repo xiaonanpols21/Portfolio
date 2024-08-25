@@ -1,7 +1,17 @@
 {
-    "header-images": {
-        "url-1": "../img/h-2.jpg",
-        "url-2": "../img/h-1.jpg",
-        "url-3": "../img/h-3.jpeg"
-    }
+    "headerImages": [
+        {
+            "url": "/img/h-2.jpg",
+            "alt": "Xiao Nan bij boba shop"
+        },
+        {
+            "url": "/img/h-1.jpg",
+            "alt": "Xiao Nan in Amsterdam",
+            "verified": true
+        },
+        {
+            "url": "/img/h-3.jpeg",
+            "alt": "Xiao Nan in Hongdae"
+        }
+    ]
 }
