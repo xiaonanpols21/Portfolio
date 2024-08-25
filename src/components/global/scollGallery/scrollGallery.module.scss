@@ -1,0 +1,54 @@
+@import "../../../styles/variables.scss";
+
+.section {
+
+    ul {
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+        margin: 0px -20px;
+        padding: 0px 20px 5px 20px;
+        scroll-snap-type: x mandatory;
+        
+        img {
+            width: 250px;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    
+        li {
+            display: block;
+            list-style: none;
+            padding: 20px;
+            height: 300px;
+            border: 1px solid $black;
+            border-radius: 20px;
+            box-shadow: 5px 5px 0px 0px $black;
+            background-color: $white;
+            scroll-snap-align: center;
+
+            animation: animate-in-x linear forwards,
+				animate-out-x linear forwards;
+                animation-timeline: view(x);
+                animation-range: entry, exit;
+
+            &:nth-child(3n) {
+                animation: animate-in-x linear forwards,
+				animate-out-x linear forwards;
+                animation-timeline: view(x);
+                animation-range: entry, exit;
+            }
+        }
+    }
+}
+
+@keyframes animate-in-x {
+	0% { opacity: 0; transform: translateX(0%) scale(0); }
+	100% { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes animate-out-x {
+	0% { opacity: 1; transform: translateX(0) scale(1); }
+	100% { opacity: 0; transform: translateX(0%) scale(0); }
+}

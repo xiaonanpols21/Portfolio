@@ -1,3 +1,5 @@
+import ScrollGallery from "../global/scollGallery";
+
 import styles from "./hero.module.scss";
 
 export default function Hero() {
@@ -7,6 +9,8 @@ export default function Hero() {
                 <input type="checkbox"/>
                 <span></span>
             </label>
+
+            <ScrollGallery/>
         </section>
     )
 }
