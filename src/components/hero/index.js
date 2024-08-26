@@ -10,6 +10,7 @@ export default function Hero() {
 
     return (
         <section className={styles.section}>
+            <h2 className="visually-hidden">Begin content</h2>
             <DarkMode/>
             <ScrollGallery data={imgData} />
             <HeroGallery/>

@@ -17,6 +17,7 @@ export default function ScrollGallery({ data }) {
     
     return (
         <section className={styles.section}>
+            <h2 className="visually-hidden">Mobiele slider</h2>
             <ul ref={ulRef}>
                 {data.map((item, key) => (
                     <li key={key}>

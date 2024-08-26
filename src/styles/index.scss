@@ -24,3 +24,7 @@ body {
 p {
 	@include f16;
 }
+
+fieldset {
+	border: none;
+}
