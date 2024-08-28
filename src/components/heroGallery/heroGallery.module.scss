@@ -1,7 +1,121 @@
+@import "../../styles/variables.scss";
 
+.section {
+    @include gridClmn(2fr 1fr, 1.25rem);
+
+    &:has(input[value="img-2"]:checked) {
+        .imgBig::before { 
+            background-image: url("../../../public/img/h-2.jpg");
+        }
+    }
+
+    &:has(input[value="img-3"]:checked) {
+        .imgBig::before { 
+            background-image: url("../../../public/img/h-3.jpeg");
+        }
+    }
+}
+
+.imgBig {
+    position: relative;
+    width: 100%; // 480px
+    height: 100%; // 440px
+    background-color: $white;
+    border-radius: 1.25rem;
+    box-shadow: $box-shadow-5;
+    border: 1px solid $black;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 1.875rem); 
+        height: calc(100% - 1.875rem); 
+        background-image: url("../../../public/img/h-1.jpg");
+        border-radius: 1.25rem;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.fieldset {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.25rem;
+
+    label {
+        display: flex;
+
+        &:nth-of-type(2) {
+            span::before {
+                background-image: url("../../../public/img/h-2.jpg");
+            }
+        }
+
+        &:nth-of-type(3) {
+            span::before {
+                background-image: url("../../../public/img/h-3.jpeg");
+            }
+        }
+        
+        input {
+            position: absolute;
+            opacity: 0;
+        }
+
+        span {
+            position: relative;
+            width: 100%; // 148px
+            height: 100%; // 130px
+            background-color: $white;
+            border-radius: 0.625rem; // 10px
+            box-shadow: $box-shadow-5;
+            border: 1px solid $black;
+    
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: calc(100% - 1.25rem); 
+                height: calc(100% - 1.25rem); 
+                background-image: url("../../../public/img/h-1.jpg");
+                border-radius: 0.625rem; // 10px
+                background-size: cover;
+                background-position: center;
+            }
+    
+            input {
+                opacity: 0;
+            }
+        }
+    }
+}
 
 @media (max-width: 992px) { 
     .section {
         display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .imgBig {
+        .verified {
+            right: 2.188rem; // 35px
+            width: 5rem; // 80px
+            aspect-ratio: 1/1;
+    
+            &::before {
+                width: 2.25rem;
+                height: 2.188rem;
+            }
+        }
+    }
+
+    .section {
+        grid-column-start: 2;
     }
 }

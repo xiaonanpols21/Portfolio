@@ -89,9 +89,6 @@
     }
 }
 
-
-
-
 .openMenu {
     @include flex(column, 0px);
     display: none;
@@ -122,9 +119,10 @@
 @media (min-width: 992px) { 
     .section {
         header {
-            max-width: 81.25rem; // 1300px
-            margin: auto;
+            @include max1300;
             padding: 1rem 4.375rem; // 70px
+            left: 3.125rem; // 50px
+            right: 3.125rem; // 50px
     
             > img {
                 width: 7.5rem; // 120px

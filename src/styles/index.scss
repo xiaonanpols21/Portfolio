@@ -21,6 +21,32 @@ body {
 	width: 1px;
 }
 
+.verified {
+    position: absolute;
+    right: 1.25rem;
+    bottom: -1.25rem;
+    width: 3.75rem; // 60px
+    aspect-ratio: 1/1;
+    background-color: $blue;
+    border-radius: 3.125rem; // 50px
+	border: 1px solid $black;
+    box-shadow: $box-shadow-5;
+   
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1.625rem; // 26px
+        height: 1.563rem; // 25px
+        background-image: url("../../public/img/icons/verified.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain
+    }
+}
+
 p {
 	@include f16;
 }

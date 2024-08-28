@@ -13,6 +13,7 @@ $box-shadow-5: 5px 5px 0px 0px $black;
 
 // Font
 $font-stack: "Poppins", sans-serif;
+
 @mixin f14 {
     font-size: 0.875rem; // 14px
     line-height: 1.438rem; // 23px
@@ -28,6 +29,11 @@ $font-stack: "Poppins", sans-serif;
     line-height: 1.875rem; // 30px
 }
 
+@mixin f20 {
+    font-size: 1.25rem; // 20px
+    line-height: 2.063rem; // 33px
+}
+
 @mixin f24 {
     font-size: 1.5rem; // 24px
     line-height: 2.5rem; // 40px
@@ -38,7 +44,7 @@ $font-stack: "Poppins", sans-serif;
     line-height: 4.313rem; // 69px
 }
 
-// Fex
+// Flex
 @mixin flex($direction, $gap) {
     display: flex;
     flex-direction: $direction;
@@ -51,6 +57,14 @@ $font-stack: "Poppins", sans-serif;
     align-items: $align;
 }
 
+// Grid
+@mixin gridClmn($clmns, $gap) {
+    display: grid;
+    grid-template-columns: $clmns;
+    gap: $gap;
+}
+
+// Btns
 @mixin btn1 {
     @include f18;
     font-family: $font-stack;
@@ -61,4 +75,10 @@ $font-stack: "Poppins", sans-serif;
     border: 1px solid $white;
     border-radius: 0.625rem; // 10px
     box-shadow: $box-shadow-5;
+}
+
+// Width
+@mixin max1300 {
+    max-width: 81.25rem;
+    margin: auto;
 }

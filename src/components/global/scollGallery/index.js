@@ -28,7 +28,7 @@ export default function ScrollGallery({ data }) {
                             alt={item.alt}
                         />
                         
-                        {item.verified && <div className={styles.verified}></div>}
+                        {item.verified && <div className="verified"></div>}
                     </li>
                 ))}
             </ul>

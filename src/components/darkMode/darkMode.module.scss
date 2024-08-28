@@ -69,3 +69,9 @@
         }
     }
 }
+
+@media (min-width: 992px) {
+    .label {
+        grid-column-start: 2;
+    }
+}
