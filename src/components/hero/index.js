@@ -2,6 +2,7 @@ import data from "../../../public/data/data.json";
 import DarkMode from "../darkMode";
 import ScrollGallery from "../global/scollGallery";
 import HeroGallery from "../heroGallery";
+import Projecten from "../projecten";
 
 import styles from "./hero.module.scss";
 
@@ -10,7 +11,7 @@ export default function Hero() {
 
     return (
         <section className={styles.section}>
-            <h2 className="visually-hidden">Begin content</h2>
+            <h3 className="visually-hidden">Begin pagina</h3>
             <DarkMode/>
             <ScrollGallery data={imgData} />
             <HeroGallery/>
@@ -21,6 +22,7 @@ export default function Hero() {
                 <p>Lorem ipsum dolor sit amet consectetur. Orci velit id id volutpat. Feugiat pharetra non mi pharetra quis.</p>
                 <button>Mijn projecten</button>
             </div>
+           <Projecten/>
         </section>
     )
 }

@@ -3,7 +3,7 @@ import styles from "./heroGallery.module.scss";
 export default function HeroGallery() {
     return (
         <section className={styles.section}>
-            <h2 className="visually-hidden">Desktop gallerij</h2>
+            <h3 className="visually-hidden">Desktop gallerij</h3>
             <div className={styles.imgBig}>
                 <div className={`verified ${styles.verified}`}></div>
             </div>

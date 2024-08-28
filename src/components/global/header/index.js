@@ -8,7 +8,7 @@ import styles from "./header.module.scss";
 export default function Header() {
     return (
         <section className={styles.section}>
-            <h2 className="visually-hidden">Header</h2>
+            <h3 className="visually-hidden">Header</h3>
             <header>
                 <Image
                     src="/img/logo.svg"
@@ -30,7 +30,7 @@ export default function Header() {
             </header>
 
             <section className={styles.openMenu}>
-                <h2 className="visually-hidden">Open menu</h2>
+                <h3 className="visually-hidden">Open menu</h3>
                 <Navigation/>
                 <Divider/>
                 <Socials/>
