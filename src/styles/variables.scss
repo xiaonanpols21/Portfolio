@@ -39,6 +39,11 @@ $font-stack: "Poppins", sans-serif;
     line-height: 2.5rem; // 40px
 }
 
+@mixin f26 {
+    font-size: 1.625rem; // 26px
+    line-height: 1.938rem; // 31px
+}
+
 @mixin f58 {
     font-size: 3.625rem; // 58 px
     line-height: 4.313rem; // 69px
@@ -79,6 +84,11 @@ $font-stack: "Poppins", sans-serif;
 
 @mixin max1300 {
     max-width: 81.25rem;
+    margin: auto;
+}
+
+@mixin max550 {
+    max-width: 34.375rem; // 550px
     margin: auto;
 }
 

@@ -35,8 +35,7 @@
 
 @media (min-width: 576px) { 
     .headerContent {
-        max-width: 34.375rem; // 550px
-        margin: auto;
+        @include max550;
 
        button {
         width: fit-content;
