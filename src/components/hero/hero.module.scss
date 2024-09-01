@@ -2,6 +2,7 @@
 
 .section {
     @include flex(column, 1.875rem); // 30px
+    position: relative;
     margin-top: 4.188rem + 1.875rem; // 67px 30px
     padding: 1.25rem;
 

@@ -23,9 +23,9 @@ export default function Hero() {
                     <p>Lorem ipsum dolor sit amet consectetur. Orci velit id id volutpat. Feugiat pharetra non mi pharetra quis.</p>
                     <button>Mijn projecten</button>
                 </div>
-            
+                <Projecten/>
             </section>
-            <Projecten/>
+            
         </>
     )
 }

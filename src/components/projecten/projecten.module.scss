@@ -1,7 +1,6 @@
 @import "../../styles/variables.scss";
 
 .section {
-    padding: 20px;
     margin-top: 40px;
 
     section {
@@ -65,26 +64,26 @@
 @media (min-width: 576px) { 
     .section {
         @include max550;
-        padding-left: 0px;
+        margin-top: 40px;
 
         section {
-            padding: 20px 0px 5px 0px;
+            padding: 20px 5px 5px 0px;
             margin: 0px;
         }
     }
 }
 
 @media (min-width: 992px) { 
-    .div {
-        @include gridClmn(1fr 1.5fr, 1.875rem 5.625rem); // 90px
-    }
 
     .section {
-        //max-width: 100%;
-        grid-column-start: 2;
-        //margin-right: 0px;
-        //padding-right: 0px;
-        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        max-width: 100%;
+        margin: 70px 0px 0px 0px;
+
+        section {
+            padding-right: 20px;
+        }
 
         img {
             width: 230px ;
