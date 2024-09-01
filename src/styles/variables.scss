@@ -72,6 +72,7 @@ $font-stack: "Poppins", sans-serif;
 // Btns
 @mixin btn1 {
     @include f18;
+    position: relative;
     font-family: $font-stack;
     font-weight: bold;
     color: $white;
@@ -80,6 +81,21 @@ $font-stack: "Poppins", sans-serif;
     border: 1px solid $white;
     border-radius: 0.625rem; // 10px
     box-shadow: $box-shadow-5;
+    cursor: pointer;
+    transition: .4s;
+
+    &:hover {
+        background-color: $pink;
+    }
+
+    &:active {
+        top: 2px;
+        left: 1px;
+        // Bron: https://dev.to/nicm42/how-to-make-a-button-looked-like-it-s-staying-pressed-down-58k
+        
+        box-shadow: 7px 7px 0px 0px $black inset;
+        
+    }
 }
 
 @mixin max1300 {
