@@ -13,6 +13,8 @@
     }
     
     article  {
+        position: relative;
+
         &:hover img {
             scale: 1.1;
         }
@@ -55,6 +57,11 @@
     position: absolute;
     right: 0px;
     top: 0px;
+    transition: .4s;
+
+    &:hover {
+        scale: 1.1;
+    }
 
     input {
         position: absolute;

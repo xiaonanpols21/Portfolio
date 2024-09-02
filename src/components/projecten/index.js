@@ -19,13 +19,11 @@ export default function Projecten() {
                                 alt="Picture of the author"
                             />
                         </div>
-                        
-
-                        <label className={styles.label}>
-                            <input type="checkbox"/>
-                            <span></span>
-                        </label>
                     </Link>
+                    <label className={styles.label}>
+                        <input type="checkbox"/>
+                        <span></span>
+                    </label>
                 </article>
                 <article>
                     <Link href="">
@@ -38,13 +36,11 @@ export default function Projecten() {
                                 alt="Picture of the author"
                             />
                         </div>
-                        
-
-                        <label className={styles.label}>
-                            <input type="checkbox"/>
-                            <span></span>
-                        </label>
                     </Link>
+                    <label className={styles.label}>
+                        <input type="checkbox"/>
+                        <span></span>
+                    </label>
                 </article>
                 <article>
                     <Link href="">
@@ -57,14 +53,13 @@ export default function Projecten() {
                                 alt="Picture of the author"
                             />
                         </div>
-                        
-
-                        <label className={styles.label}>
-                            <input type="checkbox"/>
-                            <span></span>
-                        </label>
                     </Link>
+                    <label className={styles.label}>
+                        <input type="checkbox"/>
+                        <span></span>
+                    </label>
                 </article>
+
 
                 
             </section>
