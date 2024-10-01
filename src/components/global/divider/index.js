@@ -2,6 +2,6 @@ import styles from "./divider.module.scss";
 
 export default function Divider() {
     return (
-        <div className={styles.divider}></div>
+        <div className={`divider ${styles.divider}`}></div>
     )
 }

@@ -11,6 +11,14 @@ body {
     background-color: rgba($pink, 0.1);
 }
 
+p {
+	@include f16;
+}
+
+fieldset {
+	border: none;
+}
+
 .visually-hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
@@ -47,10 +55,8 @@ body {
     }
 }
 
-p {
-	@include f16;
-}
-
-fieldset {
-	border: none;
+.divider {
+    position: relative;
+    left: -20px;
+    right: 0px;
 }

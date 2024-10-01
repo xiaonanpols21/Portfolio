@@ -3,6 +3,7 @@ import DarkMode from "../darkMode";
 import ScrollGallery from "../global/scollGallery";
 import HeroGallery from "../heroGallery";
 import Projecten from "../projecten";
+import Divider from "../global/divider";
 
 import styles from "./hero.module.scss";
 
@@ -24,6 +25,7 @@ export default function Hero() {
                     <button>Mijn projecten</button>
                 </div>
                 <Projecten/>
+                <Divider/>
             </section>
             
         </>
