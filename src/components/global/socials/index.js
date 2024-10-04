@@ -5,7 +5,7 @@ import styles from "./socials.module.scss";
 
 export default function Socials() {
     return (
-        <ul className={styles.ul}>
+        <ul className={`socials-about ${styles.ul}`}>
             <li>
                 <Link href="https://github.com/xiaonanpols21" target="_blank">
                     <figure>

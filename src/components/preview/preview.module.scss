@@ -1,14 +1,13 @@
 @import "../../styles/variables.scss";
 
 .section {
-    margin: 2.5rem 0px 4.375rem 0px; // 40px 70px
+    margin: 2.5rem 0px 6.25rem 0px; // 40px 100px
 
     section {
         @include flex(row, 1.25rem);
         overflow-x: scroll;
         margin: 0px -1.25rem;
         padding: 1.25rem 1.25rem 0.313rem 1.25rem;
-
         @include scrollGone;
     }
     
@@ -31,8 +30,12 @@
             color: black;
         }
     }
-    
+
     h3 {
+        @include f26;
+    }
+    
+    h4 {
         @include f14;
     }
 
@@ -99,12 +102,11 @@
 }
 
 @media (min-width: 992px) { 
-
     .section {
         grid-column-start: 1;
         grid-column-end: 3;
         max-width: 100%;
-        margin: 4.375rem 0px 4.375rem 0px; // 70px
+        margin: 4.375rem 0px 6.25rem 0px; // 100px
 
         section {
             padding-right: 1.25rem;

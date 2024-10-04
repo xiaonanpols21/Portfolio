@@ -2,8 +2,7 @@ import data from "../../../public/data/data.json";
 import DarkMode from "../darkMode";
 import ScrollGallery from "../global/scollGallery";
 import HeroGallery from "../heroGallery";
-import Projecten from "../projecten";
-import Divider from "../global/divider";
+import Preview from "../preview";
 
 import styles from "./hero.module.scss";
 
@@ -24,8 +23,7 @@ export default function Hero() {
                     <p>Lorem ipsum dolor sit amet consectetur. Orci velit id id volutpat. Feugiat pharetra non mi pharetra quis.</p>
                     <button>Mijn projecten</button>
                 </div>
-                <Projecten/>
-                <Divider/>
+                <Preview/>
             </section>
             
         </>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Divider from "../divider";
 import Navigation from "../navigation";
 import Socials from "../socials";
 
@@ -32,7 +31,7 @@ export default function Header() {
             <section className={styles.openMenu}>
                 <h3 className="visually-hidden">Open menu</h3>
                 <Navigation/>
-                <Divider/>
+                <div className={styles.divider}></div>
                 <Socials/>
                 <p>© 2024 XIAO</p>
             </section>

@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "./projecten.module.scss";
+import styles from "./preview.module.scss";
 
-export default function Projecten() {
+export default function Preview() {
     return (
         <section className={styles.section}>
-            <h2>Preview projecten</h2>
+            <h3>Preview projecten</h3>
             <section>
                 <article>
                     <Link href="">
-                        <h3>TDMB Dating App</h3>
+                        <h4>TDMB Dating App</h4>
                         <div>
                             <Image
                                 src="/img/thumbnail.png"
@@ -27,7 +27,7 @@ export default function Projecten() {
                 </article>
                 <article>
                     <Link href="">
-                        <h3>TDMB Dating App</h3>
+                        <h4>TDMB Dating App</h4>
                         <div>
                             <Image
                                 src="/img/thumbnail.png"
@@ -44,7 +44,7 @@ export default function Projecten() {
                 </article>
                 <article>
                     <Link href="">
-                        <h3>TDMB Dating App</h3>
+                        <h4>TDMB Dating App</h4>
                         <div>
                             <Image
                                 src="/img/thumbnail.png"

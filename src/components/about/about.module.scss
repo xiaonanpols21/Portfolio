@@ -1,0 +1,61 @@
+@import "../../styles/variables.scss";
+
+.section {
+    position: relative;
+    padding: 100px 20px;
+    background-color: rgba($purple, 0.2);
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='4' stroke-dasharray='10%2c 15' stroke-dashoffset='4' stroke-linecap='round'/%3e%3c/svg%3e");
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='4' stroke-dasharray='10%2c 15' stroke-dashoffset='4' stroke-linecap='round'/%3e%3c/svg%3e");
+    }
+
+    p {
+        margin: 2.5rem 0px;
+    }
+}
+
+@media (min-width: 576px) {
+    .section {
+        h2 {
+            @include max550;
+            margin-bottom: 1.25rem;
+        }
+        
+        p {
+            @include max550;
+            margin: 2.5rem auto;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .section div {
+        @include gridClmn(475px 1fr, 0px 100px);
+        @include max1300;
+
+        h2 {
+            margin-left: 0px;
+        }
+
+        p {
+            margin: 0px auto 0px 0px;
+
+        }
+    }
+}

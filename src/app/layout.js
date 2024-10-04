@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import Head from 'next/head';
 import Header from "@/components/global/header";
+import Bookmark from "@/components/global/bookmark";
 
 const poppins = Poppins({
     weight: ['400', '700'],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
             <body className={poppins.className}>
                 <Header/>
                 {children}
+                <Bookmark/>
             </body>
         </html>
     );
