@@ -1,6 +1,25 @@
 {
     "headerImages": [
         {
+            "url": "/img/h-2.jpg",
+            "alt": "Xiao Nan Kerst diner"
+        },
+        {
+            "url": "/img/h-1.jpg",
+            "alt": "Xiao Nan in Amsterdam",
+            "verified": true
+        },
+        {
+            "url": "/img/h-3.jpeg",
+            "alt": "Xiao Nan in Hongdae"
+        },
+        {
+            "url": "/img/h-4.jpg",
+            "alt": "Xiao Nans verjaardag"
+        }
+    ],
+    "aboutImages": [
+        {
             "url": "/img/h-5.jpg",
             "alt": "Xiao Nan Kerst diner"
         },
