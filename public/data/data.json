@@ -20,21 +20,21 @@
     ],
     "aboutImages": [
         {
-            "url": "/img/h-5.jpg",
-            "alt": "Xiao Nan Kerst diner"
+            "url": "/img/a-1.jpg",
+            "alt": "Xiao Nan met Ping Ping"
         },
-        {
-            "url": "/img/h-1.jpg",
+            {
+            "url": "/img/a-2.jpg",
             "alt": "Xiao Nan in Amsterdam",
             "verified": true
         },
         {
-            "url": "/img/h-3.jpeg",
-            "alt": "Xiao Nan in Hongdae"
+            "url": "/img/a-3.jpg",
+            "alt": "Xiao Nan bij Robo Bar"
         },
         {
-            "url": "/img/h-4.jpg",
-            "alt": "Xiao Nans verjaardag"
+            "url": "/img/a-4.jpg",
+            "alt": "Xiao Nans bij Upside Down"
         }
     ]
 }

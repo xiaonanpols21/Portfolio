@@ -21,13 +21,14 @@ export default function ScrollGallery({ data }) {
             <ul ref={ulRef}>
                 {data.map((item, key) => (
                     <li key={key}>
+                        
                         <Image
                             src={item.url}
                             width={300}
                             height={260}
                             alt={item.alt}
                         />
-                        
+                    
                         {item.verified && <div className="verified"></div>}
                     </li>
                 ))}
